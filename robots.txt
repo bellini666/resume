@@ -1,0 +1,3 @@
+Sitemap: https://bellini.page/sitemap.xml
+User-agent:*
+Disallow:
