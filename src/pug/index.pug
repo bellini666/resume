@@ -5,18 +5,38 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Homepage of Thiago Bellini Ribeiro')
-        meta(name='keywords', content='thiago,bellini,ribeiro,python,linux,devops,javascript,react,react-native,postgresql,gtk,gtk2,gtk3,zerosoft,blbventures')
+        meta(name='description', content='Senior Python Engineer with 15+ years of experience building reliable backend systems. Core maintainer of Strawberry GraphQL. Expert in Python, Django, FastAPI, PostgreSQL, GraphQL, and Kubernetes.')
+        meta(name='keywords', content='thiago,bellini,ribeiro,python,django,fastapi,strawberry,graphql,postgresql,kubernetes,docker,sendcloud,backend,engineer,open source,linux,devops')
         meta(name='author', content='Thiago Bellini Ribeiro')
+        meta(name='theme-color', content='#4c516d')
 
-        meta(property='og:title', content='Thiago Bellini Ribeiro')
+        // Open Graph / Facebook
+        meta(property='og:type', content='website')
         meta(property='og:url', content='https://bellini.page')
-        meta(property='og:image', content='https://bellini.page/img/profile.jpg')
-        meta(property='og:description', content='Homepage of Thiago Bellini Ribeiro')
+        meta(property='og:title', content='Thiago Bellini Ribeiro - Senior Python Engineer')
+        meta(property='og:description', content='Senior Python Engineer with 15+ years of experience. Core maintainer of Strawberry GraphQL.')
+        meta(property='og:image', content='https://bellini.page/assets/img/profile.jpg')
+        meta(property='og:site_name', content='Thiago Bellini Ribeiro')
+        meta(property='og:locale', content='en_US')
 
-        title Thiago Bellini Ribeiro
+        // Twitter
+        meta(name='twitter:card', content='summary')
+        meta(name='twitter:url', content='https://bellini.page')
+        meta(name='twitter:title', content='Thiago Bellini Ribeiro - Senior Python Engineer')
+        meta(name='twitter:description', content='Senior Python Engineer | Strawberry GraphQL Maintainer | 15+ years experience')
+        meta(name='twitter:image', content='https://bellini.page/assets/img/profile.jpg')
+
+        // Canonical URL
+        link(rel='canonical', href='https://bellini.page')
+
+        title Thiago Bellini Ribeiro - Senior Python Engineer
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Preconnect for performance
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(rel='preconnect', href='https://use.fontawesome.com')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -24,6 +44,46 @@ html(lang='en')
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        // Structured Data (JSON-LD)
+        script(type='application/ld+json').
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Thiago Bellini Ribeiro",
+                "url": "https://bellini.page",
+                "image": "https://bellini.page/assets/img/profile.jpg",
+                "jobTitle": "Senior Software Engineer",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Sendcloud"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Eindhoven",
+                    "addressCountry": "Netherlands"
+                },
+                "email": "thiago@bellini.dev",
+                "sameAs": [
+                    "https://github.com/bellini666",
+                    "https://www.linkedin.com/in/thiagobellini",
+                    "https://profile.codersrank.io/user/bellini666"
+                ],
+                "alumniOf": {
+                    "@type": "EducationalOrganization",
+                    "name": "Universidade de São Paulo"
+                },
+                "knowsAbout": [
+                    "Python",
+                    "Django",
+                    "FastAPI",
+                    "GraphQL",
+                    "PostgreSQL",
+                    "Kubernetes",
+                    "Docker",
+                    "Backend Development"
+                ]
+            }
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
