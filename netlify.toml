@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[build.processing]
+  skip_processing = false
+
+[context.production]
+  environment = { NODE_VERSION = "22" }
+
+# Use Ubuntu 24.04 (Noble Numbat) - latest build image
+[build.image]
+  name = "ubuntu-24.04"
