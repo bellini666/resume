@@ -43,13 +43,11 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') About
                     li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#opensource') Open Source
+                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') Education
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
 
         // Page Content
         .container-fluid.p-0
@@ -62,21 +60,20 @@ html(lang='en')
                         span.text-primary Bellini
                         | Ribeiro
                     .subheading.mb-5
-                        | Ribeirão preto · SP, Brazil · +55 16 99154-9386 ·
+                        | Eindhoven - The Netherlands ·
                         a(href='mailto:thiago@bellini.dev') thiago@bellini.dev
                     p.lead.mb-5
-                        | 👋 Hey, I'm Thiago Bellini Ribeiro! 🐍
+                        | Hey, I'm Thiago Bellini Ribeiro!
                         br
                         br
-                        | I'm a 35 years old Senior Python Engineer with a decade-long journey in
-                        | software development, specializing in crafting elegant solutions.
+                        | I'm a Senior Python Engineer with 15+ years of experience building
+                        | reliable, maintainable backend systems and APIs.
                         br
                         br
-                        | Passionate about open source, I've been an active contributor throughout
-                        | my career. Lately I've been focusing on contributing to the
+                        | I'm passionate about open source and have contributed throughout my career.
+                        | Recently, I've been focused on
                         a(href='https://strawberry.rocks') Strawberry GraphQL
-                        | lib, which I've been appointed as a
-                        | core developer of the project and also the official maintainer of the
+                        | , where I'm a core developer and the official maintainer of the
                         a(href='https://github.com/strawberry-graphql/strawberry-graphql-django') Strawberry GraphQL Django
                         | integration.
                     .social-icons
@@ -93,6 +90,34 @@ html(lang='en')
 
             hr.m-0
 
+            // Open Source
+            section#opensource.resume-section
+                .resume-section-content
+                    h2.mb-5 Open Source
+                    p
+                        | I'm actively involved in the open source community as a maintainer and contributor:
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Core maintainer of
+                            a(href='https://github.com/strawberry-graphql/strawberry') Strawberry GraphQL
+                            | , a modern Python GraphQL library
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Official maintainer of the
+                            a(href='https://github.com/strawberry-graphql/strawberry-django') Strawberry GraphQL Django
+                            | integration
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Creator of
+                            a(href='https://github.com/bellini666/pytest-language-server') pytest-language-server
+                            | , a language server implementation for pytest written in Rust
+
+            hr.m-0
+
             // Experience
             section#experience.resume-section
                .resume-section-content
@@ -102,13 +127,37 @@ html(lang='en')
                         .flex-grow-1
                             h3.mb-0 Senior Software Engineer
                             .subheading.mb-3
+                                a(href='https://www.sendcloud.com/') Sendcloud
+                            p
+                                | Started in the Carriers team, building and integrating shipping carrier integrations into the Sendcloud platform.
+                            p
+                                | Moved to the Technology team to work on cross-cutting, high-complexity initiatives across the backend platform, like:
+                            p
+                                | - Introducing ASGI capabilities to improve the platform's architecture and async readiness.
+                                br
+                                | - Supporting the migration of the platform toward a multi-tenant architecture.
+                            p
+                                | Stack: Python, Django, FastAPI, PostgreSQL, Kubernetes
+                        .flex-shrink-0
+                            span.text-primary November 2024 - Present
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Senior Software Engineer
+                            .subheading.mb-3
                                 a(href='https://www.parade.ai/') Parade
                             p
-                                | Parade is the leader in providing capacity management tools to freight brokers and 3PLs.
+                                | Built backend services for a capacity management platform used by freight brokers and 3PLs.
                             p
-                                | Stack: Python, Django, SQLAlchemy, FastAPI, PostgreSQL
+                                | Part of the Digital Source team, helping brokers find carriers when loads don't have digital booking offers.
+                            p
+                                | Helped develop and maintain Codriver, an AI-powered system designed to respond to carrier inquiries in under a minute.
+                            p
+                                | Integrated LLM capabilities into production workflows with a focus on reliability, latency, and safe automation.
+                            p
+                                | Stack: Python, FastAPI, SQLAlchemy, Pydantic, OpenAI, Django, Django REST Framework, GCP
                         .flex-shrink-0
-                            span.text-primary November 2023 - Present
+                            span.text-primary November 2023 - November 2024
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -179,14 +228,15 @@ html(lang='en')
                             .subheading.mb-3
                                 a(href='https://zerosoft.com.br') Zerosoft
                             p
-                                | Pioneering software solutions built on the pillars of innovation, agility and transparency.
+                                | Co-founded ZeroSoft and led backend development across client and product work.
                             p
-                                | As a co-founder and a lead software engineer within the company, I assumed a dual role: orchestrating backend development and spearheading the DevOps endeavors. My contributions were instrumental in realizing our vision of dynamic, transparent, and groundbreaking software solutions.
+                                | Designed and built APIs and backend services with a focus on maintainability, scalability, and delivery speed.
                             p
-                                | Stack: Python, Django, GraphQL, Graphene, Postgresql, Celery,
-                                | Redis, Pandas, Numpy, Docker
+                                | Owned DevOps responsibilities alongside engineering (containerization, environment setup, deployment workflows).
+                            p
+                                | Stack: Python, Django, GraphQL, PostgreSQL, Celery, Redis
                         .flex-shrink-0
-                            span.text-primary January 2018 - May 2020
+                            span.text-primary July 2017 - May 2020
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
@@ -228,70 +278,20 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Education
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Universidade de São Paulo (USP)
                             .subheading.mb-3
-                                a(href='//www.icmc.usp.br/graduacao/sistemas-de-informacao-bacharelado') Bachelor, Information Systems
+                                a(href='//www.icmc.usp.br/graduacao/sistemas-de-informacao-bacharelado') Bachelor's degree, Information Systems
                         .flex-shrink-0
                             span.text-primary 2015 - 2017
 
-            hr.m-0
-
-            // Skills
-            section#skills.resume-section
-                .resume-section-content
-                    h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i(title="Python").fab.fa-python
-                        li.list-inline-item
-                            i(title="PostgreSQL").fab.fa.fa-database
-                        li.list-inline-item
-                            i(title="Linux").fab.fa-linux
-                        li.list-inline-item
-                            i(title="Open Source").fab.fa-osi
-                        li.list-inline-item
-                            i(title="Docker").fab.fa-docker
-                        li.list-inline-item
-                            i(title="DigitalOcean").fab.fa-digital-ocean
-                        li.list-inline-item
-                            i(title="Javascript").fab.fa-js
-                        li.list-inline-item
-                            i(title="React/React-Native").fab.fa-react
-                    .subheading.mb-3 Differentials
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Good at solving hard to almost impossible problems
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Writes clean and reusable code as much as possible
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Functional Teams
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Agile Development & Scrum
-
-            hr.m-0
-
-            // Interests
-            section#interests.resume-section
-                .resume-section-content
-                    h2.mb-5 Interests
-                    p
-                        | Apart from my career, I enjoy gaming and watching Tv
-                        | Shows with my wife at my free time.
-                    p.mb-0
-                        | I also spent a large amount of time keeping up with
-                        | the latest technology advancements in the back-end
-                        | development world.
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 Universidade de São Paulo (USP)
+                            .subheading.mb-3 Bachelor's degree, Computer Science
+                        .flex-shrink-0
+                            span.text-primary 2010 - 2015
 
             hr.m-0
 
